@@ -6,6 +6,17 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.text-shadow {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.bg-opacity {
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust the color and opacity as needed */
+  padding: 10px;
+  border-radius: 5px;
+}
+
+
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -62,6 +73,15 @@ body {
   }
 }
 
+.hero-background {
+  background-image: url('melon.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 90vh;
+}
+
+
 @layer base {
   * {
     @apply border-border;
@@ -70,3 +90,6 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+
+
