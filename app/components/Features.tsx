@@ -20,9 +20,9 @@ const features = [
 ]
 
 const products = [
-  { id: 1, name: 'Sweet Honeydew', price: 5.99, image: '/placeholder.svg?height=200&width=200' },
-  { id: 2, name: 'Juicy Watermelon', price: 7.99, image: '/placeholder.svg?height=200&width=200' },
-  { id: 3, name: 'Fragrant Cantaloupe', price: 6.99, image: '/placeholder.svg?height=200&width=200' },
+  { id: 1, name: 'Sweet Honeydew', price: 5.99, image: '/honeydew.jpg?height=200&width=200' },
+  { id: 2, name: 'Juicy Watermelon', price: 7.99, image: '/watermelon.png?height=200&width=200' },
+  { id: 3, name: 'Fragrant Cantaloupe', price: 6.99, image: '/cantaloupe.png?height=200&width=200' },
 ]
 
 export default function Features() {
