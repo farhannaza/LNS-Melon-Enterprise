@@ -20,17 +20,17 @@ const features = [
 ]
 
 const products = [
-  { id: 1, name: 'Sweet Honeydew', price: 5.99, image: '/placeholder.svg?height=200&width=200' },
-  { id: 2, name: 'Juicy Watermelon', price: 7.99, image: '/placeholder.svg?height=200&width=200' },
-  { id: 3, name: 'Fragrant Cantaloupe', price: 6.99, image: '/placeholder.svg?height=200&width=200' },
+  { id: 1, name: 'Sweet Honeydew', price: 5.99, image: '/honeydew.jpg?height=200&width=200' },
+  { id: 2, name: 'Juicy Watermelon', price: 7.99, image: '/juicy.jpg?height=200&width=200' },
+  { id: 3, name: 'Fragrant Cantaloupe', price: 6.99, image: '/cantaloupe.png?height=200&width=200' },
 ]
 
 export default function Features() {
   return (
-    <><section className="py-20 bg-gray-50">
+    <section id="features" className="min-h-screen flex flex-col justify-center bg-gray-50 py-20">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold text-center mb-12">Why Choose LNS Melon Enterprise?</h2>
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-3 gap-8 mb-20">
           {features.map((feature, index) => (
             <div key={index} className="text-center">
               <div className="text-green-500 mb-4 flex justify-center">{feature.icon}</div>
@@ -39,17 +39,14 @@ export default function Features() {
             </div>
           ))}
         </div>
-      </div>
-    </section><section className="py-20 bg-white">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-12">Our Products</h2>
-          <div className="grid md:grid-cols-3 gap-8">
-            {products.map((product) => (
-              <ProductCard key={product.id} {...product} />
-            ))}
-          </div>
+        <h2 className="text-3xl font-bold text-center mb-12">Our Products</h2>
+        <div className="grid md:grid-cols-3 gap-8">
+          {products.map((product) => (
+            <ProductCard key={product.id} {...product} />
+          ))}
         </div>
-      </section></>
+      </div>
+    </section>
   )
 }
 

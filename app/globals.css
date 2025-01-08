@@ -73,13 +73,13 @@ body {
   }
 }
 
-.hero-background {
+/* .hero-background {
   background-image: url('melon.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   height: 90vh;
-}
+} */
 
 
 @layer base {
@@ -90,6 +90,5 @@ body {
     @apply bg-background text-foreground;
   }
 }
-
 
 
