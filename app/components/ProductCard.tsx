@@ -22,7 +22,7 @@ export default function ProductCard({ id, name, price, image }: ProductCardProps
       <img src={image} alt={name} className="w-full h-48 object-cover" />
       <div className="p-4">
         <h3 className="text-lg font-semibold mb-2">{name}</h3>
-        <p className="text-gray-600 mb-4">${price.toFixed(2)}</p>
+        <p className="text-gray-600 mb-4">RM{price.toFixed(2)}</p>
         <Button onClick={handleAddToCart} className="w-full">Add to Cart</Button>
       </div>
     </div>
