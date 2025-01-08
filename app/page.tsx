@@ -3,6 +3,9 @@ import Hero from './components/Hero'
 import Features from './components/Features'
 import Footer from './components/Footer'
 import { CartProvider } from './contexts/CartContext'
+import Testimonials from './components/Testimonials'
+import FAQ from './components/FAQ'
+import Contact from './components/Contact'
 
 export default function Home() {
   return (
@@ -12,6 +15,9 @@ export default function Home() {
         <main className="flex-grow">
           <Hero />
           <Features />
+          <Testimonials/>
+          <FAQ/>
+          <Contact/>
         </main>
         <Footer />
       </div>
