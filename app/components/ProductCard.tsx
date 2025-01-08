@@ -2,7 +2,6 @@
 
 import { Button } from "@/components/ui/button"
 import { useCart } from '../contexts/CartContext'
-import Image from 'next/image';
 
 interface ProductCardProps {
   id: number
