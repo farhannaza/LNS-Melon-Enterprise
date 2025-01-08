@@ -4,7 +4,7 @@ const testimonials = [
   {
     name: "Sarah Johnson",
     role: "Melon Enthusiast",
-    content: "LNS Melon Enterprise delivers the sweetest, juiciest melons I've ever tasted. Their commitment to quality is unmatched!",
+    content: "LNS Melon Enterprise delivers the sweetest, juiciest melons I&apos;ve ever tasted. Their commitment to quality is unmatched!",
     rating: 5
   },
   {
@@ -38,7 +38,7 @@ export default function Testimonials() {
                   <Star key={i} className={`w-5 h-5 ${i < testimonial.rating ? 'text-yellow-400 fill-current' : 'text-gray-300'}`} />
                 ))}
               </div>
-              <p className="text-gray-600 mb-4">"{testimonial.content}"</p>
+              <p className="text-gray-600 mb-4">&quot;{testimonial.content}&quot;</p>
               <div className="font-semibold">{testimonial.name}</div>
               <div className="text-sm text-gray-500">{testimonial.role}</div>
             </div>
@@ -48,4 +48,3 @@ export default function Testimonials() {
     </section>
   )
 }
-
