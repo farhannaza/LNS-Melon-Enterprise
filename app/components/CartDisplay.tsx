@@ -45,7 +45,7 @@ export default function CartDisplay() {
           {cart.map((item) => (
             <div key={item.id} className="flex justify-between items-center mb-2">
               <span>{item.name} (x{item.quantity})</span>
-              <span>${(item.price * item.quantity).toFixed(2)}</span>
+              <span>RM{(item.price * item.quantity).toFixed(2)}</span>
               <Button
                 variant="destructive"
                 size="sm"
