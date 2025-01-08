@@ -8,7 +8,7 @@ const testimonials = [
     rating: 5
   },
   {
-    name: "C'hen Jun Bin",
+    name: "C'hng Jun Bin",
     role: "Restaurant Owner",
     content: "As a restaurant owner, I rely on fresh, high-quality produce. LNS Melon Enterprise never disappoints with their consistent quality and timely deliveries.",
     rating: 5

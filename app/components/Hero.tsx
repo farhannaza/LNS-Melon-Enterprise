@@ -2,6 +2,14 @@
 
 import { Button } from "@/components/ui/button"
 import { useEffect, useState } from 'react'
+import Link from 'next/link'
+import { smoothScroll } from '../utils/smoothScroll'
+
+const textShadowStyle = `
+  .text-shadow {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+`
 
 export default function Hero() {
   const [scrollY, setScrollY] = useState(0)
@@ -15,11 +23,11 @@ export default function Hero() {
   }, [])
 
   return (
-    <section id="hero" className="relative bg-green-500 text-white min-h-screen flex items-center overflow-hidden">
+    <section id="hero" className="relative bg-green-500 text-white h-screen scroll-mt-16 flex items-center overflow-hidden">
       <div 
         className="absolute inset-0 bg-cover bg-center z-0" 
         style={{
-          backgroundImage: "url('melon.png?/placeholder.svg?height=1080&width=1920')",
+          backgroundImage: "url('/melon.png?height=1080&width=1920')",
           transform: `translateY(${scrollY * 0.5}px)`,
         }}
       ></div>
@@ -30,12 +38,13 @@ export default function Hero() {
           opacity: 1 - (scrollY * 0.002),
         }}
       >
-        <h1 className="text-4xl md:text-6xl font-bold mb-6">Fresh Melons, Delivered to You</h1>
-        <p className="text-xl mb-8">Experience the sweetness of our premium melons, grown with care and delivered with love.</p>
-        <Button size="lg" className="bg-white text-green-600 hover:bg-green-100">
-          Explore Our Melons
+        <h1 className="text-4xl md:text-6xl font-bold mb-6 text-shadow">Fresh Melons, Delivered to You</h1>
+        <p className="text-xl mb-8 text-shadow">Experience the sweetness of our premium melons, grown with care and delivered with love.</p>
+        <Button size="lg" className="bg-white text-green-600 hover:bg-green-100" asChild>
+          <Link href="#features" onClick={smoothScroll}>Explore Our Melons</Link>
         </Button>
       </div>
+      <style jsx>{textShadowStyle}</style>
     </section>
   )
 }
