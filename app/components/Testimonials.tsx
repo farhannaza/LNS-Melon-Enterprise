@@ -2,19 +2,19 @@ import { Star } from 'lucide-react'
 
 const testimonials = [
   {
-    name: "Sarah Johnson",
+    name: "Abu Kasim",
     role: "Melon Enthusiast",
     content: "LNS Melon Enterprise delivers the sweetest, juiciest melons I&apos;ve ever tasted. Their commitment to quality is unmatched!",
     rating: 5
   },
   {
-    name: "Mike Thompson",
+    name: "C'hen Jun Bin",
     role: "Restaurant Owner",
     content: "As a restaurant owner, I rely on fresh, high-quality produce. LNS Melon Enterprise never disappoints with their consistent quality and timely deliveries.",
     rating: 5
   },
   {
-    name: "Emily Chen",
+    name: "Izawani Husainani",
     role: "Health Coach",
     content: "I always recommend LNS Melon Enterprise to my clients. Their melons are not only delicious but also packed with nutrients. A great addition to any healthy diet!",
     rating: 4
