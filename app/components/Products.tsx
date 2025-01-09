@@ -3,11 +3,12 @@
 import { useState } from 'react'
 import { useCart } from '../contexts/CartContext'
 import { Button } from "@/components/ui/button"
+import Image from 'next/image'
 
 const products = [
-  { id: 1, name: 'Sweet Honeydew', price: 5.99, image: '/honeydew.jpg?height=300&width=300' },
-  { id: 2, name: 'Juicy Watermelon', price: 7.99, image: '/juicy.jpg?height=300&width=300' },
-  { id: 3, name: 'Fragrant Cantaloupe', price: 6.99, image: '/cantalop.jpg?height=300&width=300' },
+  { id: 1, name: 'Sweet Honeydew', price: 5.99, image: '/honeydew.jpg' },
+  { id: 2, name: 'Juicy Watermelon', price: 7.99, image: '/juicy.jpg' },
+  { id: 3, name: 'Fragrant Cantaloupe', price: 6.99, image: '/cantalop.jpg' },
 ]
 
 export default function Products() {
@@ -20,7 +21,13 @@ export default function Products() {
         <h2 className="text-3xl font-bold text-center mb-12 text-green-700">Our Melons</h2>
         <div className="flex flex-col md:flex-row items-center justify-center gap-8">
           <div className="md:w-1/2">
-            <img src={activeProduct.image} alt={activeProduct.name} className="rounded-lg shadow-xl w-full h-auto" />
+            <Image 
+              src={activeProduct.image} 
+              alt={activeProduct.name} 
+              className="rounded-lg shadow-xl"
+              width={600}
+              height={600}
+            />
           </div>
           <div className="md:w-1/2">
             <h3 className="text-2xl font-bold mb-4">{activeProduct.name}</h3>
@@ -47,4 +54,3 @@ export default function Products() {
     </section>
   )
 }
-
