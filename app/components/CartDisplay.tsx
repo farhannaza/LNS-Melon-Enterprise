@@ -58,7 +58,7 @@ export default function CartDisplay() {
         </div>
         <div className="mt-4 flex justify-between items-center">
           <span className="font-bold">Total:</span>
-          <span className="font-bold">${totalPrice.toFixed(2)}</span>
+          <span className="font-bold">RM{totalPrice.toFixed(2)}</span>
         </div>
         <div className="mt-4 flex justify-between">
           <Button onClick={clearCart} variant="outline">

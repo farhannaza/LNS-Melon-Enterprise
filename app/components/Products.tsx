@@ -31,7 +31,7 @@ export default function Products() {
           </div>
           <div className="md:w-1/2">
             <h3 className="text-2xl font-bold mb-4">{activeProduct.name}</h3>
-            <p className="text-xl mb-4">${activeProduct.price.toFixed(2)}</p>
+            <p className="text-xl mb-4">RM{activeProduct.price.toFixed(2)}</p>
             <p className="mb-6">Savor the exquisite taste of our premium {activeProduct.name.toLowerCase()}. Each bite is a journey through sun-kissed fields and careful cultivation.</p>
             <Button onClick={() => addToCart({ ...activeProduct, quantity: 1 })} className="bg-green-600 text-white hover:bg-green-700">
               Add to Cart
