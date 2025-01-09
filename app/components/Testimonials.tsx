@@ -34,7 +34,7 @@ export default function Testimonials() {
                   <Star key={i} className={`w-5 h-5 ${i < testimonial.rating ? 'text-yellow-400 fill-current' : 'text-gray-300'}`} />
                 ))}
               </div>
-              <p className="mb-4 italic">"{testimonial.content}"</p>
+              <p className="mb-4 italic">&quot;{testimonial.content}&quot;</p>
               <div className="font-semibold">{testimonial.name}</div>
               <div className="text-sm text-gray-500">{testimonial.role}</div>
             </div>
@@ -44,4 +44,3 @@ export default function Testimonials() {
     </section>
   )
 }
-
