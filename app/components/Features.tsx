@@ -1,48 +1,35 @@
 import { Truck, Award, Leaf } from 'lucide-react'
-import ProductCard from './ProductCard'
 
 const features = [
   {
     icon: <Truck size={48} />,
-    title: 'Fast Delivery',
-    description: 'We ensure our melons reach you at peak freshness with our efficient delivery system.'
+    title: 'Swift Delivery',
+    description: 'From our fields to your table in record time, ensuring peak freshness.'
   },
   {
     icon: <Award size={48} />,
-    title: 'Premium Quality',
-    description: 'Our melons are carefully selected to meet the highest standards of quality and taste.'
+    title: 'Unmatched Quality',
+    description: 'Only the finest melons make the cut, guaranteeing a superior taste experience.'
   },
   {
     icon: <Leaf size={48} />,
-    title: 'Sustainable Farming',
-    description: 'We use eco-friendly farming practices to grow our melons, ensuring sustainability.'
+    title: 'Eco-Friendly Farming',
+    description: 'Sustainably grown with love for both you and the environment.'
   }
-]
-
-const products = [
-  { id: 1, name: 'Sweet Honeydew', price: 5.99, image: '/honeydew.jpg?height=200&width=200' },
-  { id: 2, name: 'Juicy Watermelon', price: 7.99, image: '/juicy.jpg?height=200&width=200' },
-  { id: 3, name: 'Fragrant Cantaloupe', price: 6.99, image: '/cantaloupe.png?height=200&width=200' },
 ]
 
 export default function Features() {
   return (
-    <section id="features" className="min-h-screen flex flex-col justify-center bg-gray-50 py-20">
+    <section id="features" className="py-20 bg-white">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold text-center mb-12">Why Choose LNS Melon Enterprise?</h2>
-        <div className="grid md:grid-cols-3 gap-8 mb-20">
-          {features.map((feature, index) => (
-            <div key={index} className="text-center">
-              <div className="text-green-500 mb-4 flex justify-center">{feature.icon}</div>
-              <h3 className="text-xl font-semibold mb-2">{feature.title}</h3>
-              <p className="text-gray-600">{feature.description}</p>
-            </div>
-          ))}
-        </div>
-        <h2 className="text-3xl font-bold text-center mb-12">Our Products</h2>
+        <h2 className="text-3xl font-bold text-center mb-12 text-green-700">Why Choose LNS Melon?</h2>
         <div className="grid md:grid-cols-3 gap-8">
-          {products.map((product) => (
-            <ProductCard key={product.id} {...product} />
+          {features.map((feature, index) => (
+            <div key={index} className="bg-green-50 rounded-lg p-6 shadow-md transition-transform duration-300 hover:scale-105">
+              <div className="text-green-600 mb-4 flex justify-center">{feature.icon}</div>
+              <h3 className="text-xl font-semibold mb-2 text-center">{feature.title}</h3>
+              <p className="text-gray-600 text-center">{feature.description}</p>
+            </div>
           ))}
         </div>
       </div>
