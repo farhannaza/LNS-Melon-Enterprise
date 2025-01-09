@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button"
 const products = [
   { id: 1, name: 'Sweet Honeydew', price: 5.99, image: '/honeydew.jpg?height=300&width=300' },
   { id: 2, name: 'Juicy Watermelon', price: 7.99, image: '/juicy.jpg?height=300&width=300' },
-  { id: 3, name: 'Fragrant Cantaloupe', price: 6.99, image: '/Cantaloupes.jpg?height=300&width=300' },
+  { id: 3, name: 'Fragrant Cantaloupe', price: 6.99, image: '/cantalop.jpg?height=300&width=300' },
 ]
 
 export default function Products() {
