@@ -23,7 +23,7 @@ export default function Header() {
       <div className="container mx-auto px-4 py-4">
         <div className="flex justify-between items-center">
           <Link href="/" className="flex items-center space-x-2">
-            <Melon size={32} className={`${isScrolled ? 'text-green-700' : 'text-white'}`} />
+            <Melon size={0} className={`${isScrolled ? 'text-green-700' : 'text-white'}`} />
             <span className={`text-xl font-bold ${isScrolled ? 'text-green-700' : 'text-white'}`}>LNS Melon</span>
           </Link>
           <nav className="hidden md:flex items-center space-x-4">

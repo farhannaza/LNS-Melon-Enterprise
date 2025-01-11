@@ -6,9 +6,27 @@ import { Button } from "@/components/ui/button"
 import Image from 'next/image'
 
 const products = [
-  { id: 1, name: 'Sweet Honeydew', price: 5.99, image: '/honeydew.jpg' },
-  { id: 2, name: 'Juicy Watermelon', price: 7.99, image: '/juicy.jpg' },
-  { id: 3, name: 'Fragrant Cantaloupe', price: 6.99, image: '/cantalop.jpg' },
+  { 
+    id: 1, 
+    name: 'Sweet Honeydew', 
+    price: 5.99, 
+    image: '/honeydew.jpg',
+    description: 'Indulge in the lush sweetness of our Sweet Honeydew, grown to perfection for a juicy delight.'
+  },
+  { 
+    id: 2, 
+    name: 'Juicy Watermelon', 
+    price: 7.99, 
+    image: '/juicy.jpg',
+    description: 'Refresh your senses with our Juicy Watermelon, bursting with crisp, hydrating flavors.'
+  },
+  { 
+    id: 3, 
+    name: 'Fragrant Cantaloupe', 
+    price: 6.99, 
+    image: '/cantalop.jpg',
+    description: 'Delight in the fragrant aroma and smooth taste of our premium Cantaloupe.'
+  },
 ]
 
 export default function Products() {
@@ -32,7 +50,7 @@ export default function Products() {
           <div className="md:w-1/2">
             <h3 className="text-2xl font-bold mb-4">{activeProduct.name}</h3>
             <p className="text-xl mb-4">RM{activeProduct.price.toFixed(2)}</p>
-            <p className="mb-6">Savor the exquisite taste of our premium {activeProduct.name.toLowerCase()}. Each bite is a journey through sun-kissed fields and careful cultivation.</p>
+            <p className="mb-6">{activeProduct.description}</p>
             <Button onClick={() => addToCart({ ...activeProduct, quantity: 1 })} className="bg-green-600 text-white hover:bg-green-700">
               Add to Cart
             </Button>
