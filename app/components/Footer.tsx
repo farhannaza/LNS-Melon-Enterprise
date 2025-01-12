@@ -20,8 +20,6 @@ export default function Footer() {
             </ul>
           </nav>
           <div className="flex space-x-4">
-            {/* <a href="#" className="hover:text-green-200"><Facebook /></a> */}
-            {/* <a href="#" className="hover:text-green-200"><Twitter /></a> */}
             <a href="https://www.instagram.com/lnsmelon666?igsh=YWE4dmdpbWkxczJr&utm_source=qr" className="hover:text-green-200"><Instagram /></a>
           </div>
         </div>
