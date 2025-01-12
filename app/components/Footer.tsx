@@ -25,7 +25,7 @@ export default function Footer() {
         </div>
         <div className="mt-8 text-center text-sm">
           &copy; {new Date().getFullYear()} LNS Melon. All rights reserved.
-        </div>
+        </div >
       </div>
     </footer>
   )
